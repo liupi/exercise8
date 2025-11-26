@@ -5,10 +5,10 @@ public class Main {
 
         Animal[] animal = new Animal[]{
                 new Mammal("Dog", "Max", 1 , 5),
-                new Dog("Small", "Dog", "Bim", 5, 7),
                 new Bird("White", "Owl", 2, 3),
-                new Pigeon("Domestic", "Brown", "Pippin", 5, 1),
                 new Fish("Bony", "Ra", 1, 1),
+                new Dog("Small", "Dog", "Bim", 5, 7),
+                new Pigeon("Domestic", "Brown", "Pippin", 5, 1),
                 new Blowfish("Toxic", "Pufferfish", "Fugu", 8)
         };
 
@@ -21,6 +21,12 @@ public class Main {
         animalBehavior[0].sleep();
         animalBehavior[1].sleep();
         animalBehavior[2].sleep();
+
+        System.out.println();
+
+        for (Animal value : animal) {
+            value.move();
+        }
 
     }
 }

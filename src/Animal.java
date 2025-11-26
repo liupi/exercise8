@@ -1,4 +1,4 @@
-abstract class Animal {
+abstract class Animal implements AnimalBehavior, AnimalMove{
     private String name;
     private int age;
     private int weight;
@@ -45,5 +45,15 @@ abstract class Animal {
 
     public String toString() {
         return "Animal{" + "name=" + name + ", age=" + age + ", weight=" + weight + '}';
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog is sleeping");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Dog run");
     }
 }
