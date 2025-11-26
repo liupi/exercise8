@@ -1,4 +1,4 @@
-public class Pigeon extends Bird{
+public class Pigeon extends Bird implements AnimalBehavior{
     private String family;
 
     public Pigeon() {
@@ -47,6 +47,16 @@ public class Pigeon extends Bird{
     public String toString() {
         return "Pigeon{" + "name=" + getName() + ", age=" + getAge() +
                 ", weight=" + getWeight() + ", featherColor=" + getFeatherColor() +", family=" + family + '}';
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Pigeon is sleeping");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Pigeon is flying");
     }
 
 }

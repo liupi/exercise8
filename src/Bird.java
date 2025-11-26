@@ -1,4 +1,4 @@
-public class Bird extends Animal {
+public class Bird extends Animal implements AnimalMove {
     private String featherColor;
 
     public Bird() {
@@ -42,5 +42,10 @@ public class Bird extends Animal {
     public String toString() {
         return "Bird{" + "name=" + getName() + ", age=" + getAge() +
                 ", weight=" + getWeight() + ", featherColor=" + featherColor + '}';
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Bird moves");
     }
 }

@@ -1,4 +1,4 @@
-public class Fish extends Animal {
+public class Fish extends Animal implements AnimalMove {
     private String group;
 
     public Fish() {
@@ -42,5 +42,10 @@ public class Fish extends Animal {
     public String toString() {
         return "Fish{" + "name=" + getName() + ", age=" + getAge() +
                 ", weight=" + getWeight() + ", group=" + group + '}';
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Fish moves");
     }
 }
