@@ -56,4 +56,5 @@ abstract class Animal implements AnimalBehavior, AnimalMove{
     public void move() {
         System.out.println("Dog run");
     }
+
 }

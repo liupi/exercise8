@@ -1,3 +1,3 @@
-interface AnimalBehavior {
+public interface AnimalBehavior {
     void sleep();
 }

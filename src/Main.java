@@ -28,5 +28,11 @@ public class Main {
             value.move();
         }
 
+        System.out.println();
+
+        for (Animal value : animal) {
+            AnimalName.name(value.getName());
+        }
+
     }
 }
